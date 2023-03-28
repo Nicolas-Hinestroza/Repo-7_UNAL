@@ -10,6 +10,8 @@ Para cada punto se debe crear un programa individual cada punto debe tener su re
     while n < 100: # Mientras que n sea menor que 100 haga
     n += 1 # n es igual al valor mas 1 y asi se repite
     print("Este es el valor " + str(n) + " y su cuadrado es: " + str(n**2)) # Cuando el proceso llega a su fin imprimimos
+    
+ ![image](https://user-images.githubusercontent.com/124611099/228311868-10b2c397-d44e-4dd5-aa29-fa242c1fb84e.png)
  
 - **2. Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.**
 
@@ -26,18 +28,23 @@ Para cada punto se debe crear un programa individual cada punto debe tener su re
        print("los valores pares son: " + str(p) + " y los valores impares son: " + str(i)) # Se imprimen los resultados 
     i += 2  # Ahora este proceso va a hacer que se impriman todos los numeros impares
 
+![image](https://user-images.githubusercontent.com/124611099/228314018-2896e21d-ee96-4437-ad63-4a1c59ed24fa.png)
+
 - **3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado.**
 
-![image](https://user-images.githubusercontent.com/124611099/228125658-d0fed273-554c-48e6-996d-9ac095c024fc.png)
+![image](https://user-images.githubusercontent.com/124611099/228314669-3e911792-7a05-43a1-95d1-4660e09d8bf9.png)
 
-    # PUNTO NUMERO 3
-    n = int(input("Escribe un valor mayor que 2: ")) # se define la variable n 
-    while n < 2: # debe ser un numero mayor que 2
-       n = int(input("ERROR, Digita un valor mayor que 2")) # si no es asi se imprime error.
-    while n >= 2: # Mientras que n sea mayor o igual a 2 haga
-       if n % 2 == 0: # si el residuo de la division entre n y 2 es de 0 asi solo imprimiremos los pares 
-          print("Este es el valor numero " + str(n)) # Se imprimen los numeros
-    n -=2 # Utilizamos esta operacion para que n vaya disminuyendo de 2 en 2
+     # PUNTO NUMERO 3
+     n = int(input("Escribe un valor mayor que 2: ")) # se define la variable n 
+     if n > 2: # debe ser un numero mayor que 2
+        while n >= 2: # Mientras que n sea mayor o igual a 2 haga
+            if n % 2 == 0: # si el residuo de la division entre n y 2 es de 0 asi solo imprimiremos los pares 
+               print("Este es el valor numero " + str(n)) # Se imprimen los numeros
+               n -=2 # Utilizamos esta operacion para que n vaya disminuyendo de 2 en 2
+     else:
+        n = int(input("ERROR, Digita un valor mayor que 2")) # si no es asi se imprime error.
+    
+![image](https://user-images.githubusercontent.com/124611099/228316251-bb7140ed-bb01-48a4-8e2b-9f5520993431.png) 
 
 - **4. En 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18:9 millones. Las tasas de crecimiento anual de la población serán de 2% y 3% respectivamente. Desarrollar un algoritmo para informar en que año la población del país B superará a la de A.**
 
