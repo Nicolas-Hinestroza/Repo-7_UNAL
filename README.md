@@ -119,3 +119,22 @@ Para cada punto se debe crear un programa individual cada punto debe tener su re
 
 - **8. Implementar el algoritmo que muestre los números primos del 1 al 100. nota: use funciones**
 
+![image](https://user-images.githubusercontent.com/124611099/228346485-d73d7841-ff3a-4e3b-958d-0210fb089ec7.png)
+
+    print("los numeros primos del 1 al 100 son: ")# Imprimimos esta frase para que el programa se vea mas bonito
+    def primo(n : int): #Definimos la funcion primo como n
+        i = 2 # Asignamos la variable i como 2
+        a = n ** 0.5 + 1 # la variable a es la operacion entre n elevado entre 0.5 sumado 1
+        if n < 2: #si n es menor que 2 entonces...
+           return False # el programa no leera los numeron menores a 2
+         while i != int(a): # mientras que i sea diferente al valor que ya asignamos anteriormente (a) 
+             if n % i == 0: #si el residuo de la division entre n e i es 0 entonces...
+                return False #se tornara como falso
+             i += 1  # y para que vayan aumentando los numeros usamos la operacion i igual a i mas 1
+         return True # se torna verdadera la funcion
+    if __name__ == "__main__": # ahora ejecutamos el programa con la funcion main
+       x = 1 #definimos la variable como x como 1
+       while x <= 100: # mientras que x sea menor o igual a 100 entonces haga
+          if primo(x): # los valores que venian anterior mente son los que se van a imprimir es decir los primos.
+             print(x) # se imprimen los primos hasta que llegue a 100
+          x += 1 # para que vaya aumentando el x e ir mirando si es primo o no, se le suma a x 1
